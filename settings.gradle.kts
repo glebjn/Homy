@@ -13,17 +13,20 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "Homy"
-include ':app'
 
-def includeFeature = { name ->
-    include ":${name}"
-    project(":${name}").projectDir = new File(rootDir, "modules/features/${name}")
+include(":app")
+
+fun includeFeature(name: String) {
+    include(":${name}")
+    project(":${name}").projectDir = File(rootDir, "modules/features/${name}")
 }
+
 includeFeature("feature-vitrina-api")
 includeFeature("feature-vitrina-internal")
 
-def includeCore = { name ->
-    include ":${name}"
-    project(":${name}").projectDir = new File(rootDir, "modules/cores/${name}")
+fun includeCore(name: String) {
+    include(":${name}")
+    project(":${name}").projectDir = File(rootDir, "modules/cores/${name}")
 }
 includeCore("core-domain")
+
