@@ -13,7 +13,7 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.glebjay.homy.databinding.FragmentVitrinaBinding
+import com.vitrina.internal.databinding.FragmentVitrinaBinding
 import com.vitrina.internal.di.vitrinaDi
 import org.koin.core.context.loadKoinModules
 
