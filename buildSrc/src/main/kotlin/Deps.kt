@@ -7,8 +7,10 @@ object Deps {
     const val NAVIGATION_UI_KTX = "androidx.navigation:navigation-ui-ktx:${Versions.NAVIGATION_COMPONENT}"
     const val VIEWMODEL = "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.LIFECYCLE}"
 
+    const val KOIN_CORE = "io.insert-koin:koin-core:${Versions.KOIN}"
     const val KOIN_ANDROID = "io.insert-koin:koin-android:${Versions.KOIN}"
     const val KOIN_ANDROID_COMPAT = "io.insert-koin:koin-android-compat:${Versions.KOIN}"
+    const val KOIN_COMPOSE = "io.insert-koin:koin-androidx-compose:${Versions.KOIN}"
 
     const val KOTLIN_COROUTINE_ANDROID = "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Versions.KOTLIN}"
     const val KOTLIN_COROUTINE_TEST = "org.jetbrains.kotlinx:kotlinx-coroutines-test:${Versions.KOTLIN}"
