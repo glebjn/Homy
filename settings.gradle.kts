@@ -30,3 +30,4 @@ fun includeCore(name: String) {
 }
 includeCore("core-domain")
 
+include(":designsystem")
